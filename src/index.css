@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Custom thin scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(51, 65, 85, 0.8);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(71, 85, 105, 1);
+  }
+}
+
+/* Custom Leaflet Map Styles */
+.leaflet-container {
+  background-color: #020617 !important;
+  font-family: inherit;
+}
+
+.leaflet-custom-tooltip {
+  background: rgba(15, 23, 42, 0.94) !important;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  border-radius: 0.75rem !important;
+  color: #f8fafc !important;
+  padding: 0.4rem 0.75rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(12px) !important;
+  font-size: 0.8rem !important;
+  direction: rtl !important;
+}
+
+.leaflet-custom-tooltip::before {
+  border-top-color: rgba(15, 23, 42, 0.94) !important;
+}
+
+.leaflet-pane {
+  z-index: 10 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 20 !important;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 14s linear infinite;
+  transform-origin: center center;
+}

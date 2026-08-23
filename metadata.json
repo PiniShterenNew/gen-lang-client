@@ -1,0 +1,6 @@
+{
+  "name": "מפת הארץ - Israel Spatial Orientation Game",
+  "description": "משחק אינטראקטיבי ללימוד ובניית מפה מנטלית של ישראל: מיקום ערים, כבישים ראשיים, צמתים ומחלפים, יחסים מרחביים ובניית מסלולים.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
